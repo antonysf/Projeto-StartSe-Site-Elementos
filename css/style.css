@@ -54,9 +54,11 @@ header .container img{
     height: 30px;
 }
 
-header .container .img2 {         
-    width: 450px;   
+#checkbox-menu {
+    display: none;
 }
+
+
 
 /* Main */
 main {
