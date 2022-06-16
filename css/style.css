@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'sans-serif';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+} 
+
+/*Header*/
+
+header {
+    background-color: #0080ed;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height: 30px;
+}
+
+header .container .img2 {         
+    width: 450px;   
+}
+
+/* Main */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto;
+}
+
+h2{
+    color: rgb(0,0,0);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-top: 9px;
+}
+
+.container-main h2 span::after {
+    content:'';
+    display: flex;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #0080ed;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+h3{
+    color: rgb(131,131,131);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+.form-main {
+    margin-top: 20px;
+}
+
+.form-main input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid #0080ed;
+}
+.form-main [type="submit"] {
+    background-color: #0080ed;
+    color: white;
+}
+.form-main [type="submit"]:hover {
+    cursor: pointer;
+}
+
+main .container-main img{
+    width: 600px;
+}
+
+/* Cards */
+
+.cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(187,185,185);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #000000;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin:20px;
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desafio Cadastro */
+
+#conteiner-register {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-family: "Source Sans Pro", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+    
+}
+
+
+/* container box*/
+
+.container-box {
+    width: 100%;
+    height: 95vh;     
+    display: flex;     
+    align-items: center;
+    max-width: 980px;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);    
+}
+
+/* form img*/
+
+.form-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+/* tamanho da imagem form img*/
+
+
+.form-img img {
+    width: 20rem;
+}
+
+/* form centralizado*/
+
+.form {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+
+
+/* tible*/
+
+.form-title {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* efeito title*/
+.form-title h2::after {
+    content:'';
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #0080ed;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/* input group */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/* espaçamentos dos input group */
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border:#707070;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px #707072; 
+}
+
+/* cor de dentro dos input group */
+
+.input-box input:hover {
+    background-color: #eeeeee71;
+}
+
+/* cor das bordas em volta dos input group*/
+
+.input-box input:focus-visible {
+    outline: 1px solid #0080ea;
+}
+
+.input-group label, 
+.radio-title h6,
+.checkbox-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+
+.input-box input::placeholder {
+    color: #707070;
+}
+
+
+
+    
+ /* Radio */  
+   
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62em;
+    padding: 0 0.5rem;
+}
+
+.radio-input {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.radio-input input {
+    margin-right: 0.35rem;
+
+}
+
+.radio-input  label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/* Espaçamento Checkbox*/
+.checkbox-inputs {
+    margin-top: 1.9em;
+}
+
+/* Checkbox*/
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6em;
+    padding: 0 0.5rem;
+}
+
+.checkbox-input {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.checkbox-input input {
+    margin-right: 0.35rem;
+
+}
+
+.checkbox-input  label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+/* Botão*/
+
+.button-register button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #0080ea;
+    padding: 0.62rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-register button:hover {
+    background-color: #0080ed;
+}
+
+.button-register button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+
+
