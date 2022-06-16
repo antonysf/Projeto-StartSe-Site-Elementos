@@ -8,7 +8,7 @@
 
 html,
 body {
-    height: 100vh;
+    
     font-family: "Source Sans Pro", 'sans-serif';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;    
@@ -115,9 +115,16 @@ h3{
 .form-main [type="submit"] {
     background-color: #0080ed;
     color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
+
 .form-main [type="submit"]:hover {
     cursor: pointer;
+    background-color: rgba(0, 128, 237, 0.75);
+    transform: translateY(-2px);
 }
 
 main .container-main img{
@@ -125,6 +132,12 @@ main .container-main img{
 }
 
 /* Cards */
+
+a {
+    text-decoration: none;
+}
+
+
 
 .cards {
     width: 90%;
@@ -148,6 +161,7 @@ main .container-main img{
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px #000000;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
 }
 
 .card:hover{
@@ -159,6 +173,8 @@ main .container-main img{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 225px;
 }
 
 .image img{
@@ -198,8 +214,7 @@ main .container-main img{
 /* Desafio Cadastro */
 
 #conteiner-register {
-    height: 100vh;
-    
+    height: 100vh;    
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -401,7 +416,8 @@ main .container-main img{
 }
 
 .button-register button:hover {
-    background-color: #0080ed;
+    background-color: rgba(0, 128, 237, 0.75);
+    transform: translateY(-2px);
 }
 
 .button-register button a {
