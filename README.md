@@ -6,6 +6,7 @@ Projeto em HTML com CSS orientado pela StartSe Tech Academy, esse projeto foi fe
 
 ## link de direcionamento do projeto
 
+https://antonysf.github.io/Projeto-StartSe-Site-Elementos/
 
 ## Tecnologias utilizadas
 HTML / CSS
